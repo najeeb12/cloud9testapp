@@ -1,0 +1,8 @@
+Django==1.9
+Pillow==2.3.0
+argparse==1.2.1
+gunicorn==19.1.1
+html5lib==0.999
+pyparsing==2.0.1
+python-dateutil==1.5
+wsgiref==0.1.2

@@ -23,3 +23,9 @@ urlpatterns = [
     url(r'^$', home, name='home'),
     url(r'^about/', about ,name='about')
 ]
+
+
+if settings.DEBUG is True:   #if DEBUG is True it will be served automatically
+    urlpatterns += patterns('',
+            url(r'^static/(?P<path>.*)$', 'django.views.static.serve', {'document_root': settings.STATIC_ROOT}),
+    )

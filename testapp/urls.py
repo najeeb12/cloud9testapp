@@ -17,6 +17,7 @@ Including another URLconf
 from django.conf.urls import url
 from django.contrib import admin
 from testapp.views import *
+from testapp import settings
 
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
